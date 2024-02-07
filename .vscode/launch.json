@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "pythonPath": ".venv/bin/python",  // Update with the path to your virtual environment's Python interpreter
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "args": [],
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "jinja": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "python.linting.enabled": True,  // Use CamelCase 'True' on Python
+    "python.linting.pylintEnabled": True,  // Use CamelCase 'True' on Python
+    "python.formatting.autopep8Enabled": True,  // Use CamelCase 'True' on Python
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": True  // Use CamelCase 'True' on Python
+        }
+    },
+    "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks",
+    "task.autoDetect": "off", // Disable auto detection of tasks
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "pip",
+            "args": [
+                "install",
+                "-r",
+                "${workspaceFolder}/requirements.txt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": True
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

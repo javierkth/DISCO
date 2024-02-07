@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-python.python",             // Python extension (includes Python, Pylint, etc.)
+        "ms-toolsai.jupyter",           // Jupyter extension for Notebooks
+        "ms-toolsai.jupyter-renderers"  // Jupyter Notebook Renderers
+    ]
+}
